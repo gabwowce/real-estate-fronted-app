@@ -1,0 +1,210 @@
+{
+    "header": {
+      "menu": {
+        "items": [
+            { "label": "Home", "link": "#home" },
+            { "label": "Properties", "link": "#properties" },
+            { "label": "Client Feedback", "link": "#client-feedback" },
+            { "label": "FAQ", "link": "#faq" }
+        ]
+      }
+    },
+    "intro": {
+      "title": "Discover Your Dream Property with Estatein",
+      "value": "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.",
+      "statistics": [
+        { "title": "200+", "value": "Happy Customers" },
+        { "title": "10k+", "value": "Properties For Clients" },
+        { "title": "16+", "value": "Years of Experience" }
+      ],
+      "slogans": [
+        { "title": "Find Your Dream Home", "icon": "/assets/slogans/111.png" },
+        { "title": "Unlock Property Value", "icon": "/assets/slogans/222.png" },
+        { "title": "Effortless Property Management", "icon": "/assets/slogans/333.png" },
+        { "title": "Smart Investments, Informed Decisions", "icon": "/assets/slogans/444.png" }
+      ]
+    },
+    "realEstate":{
+        "title": "Featured Properties",
+        "value": "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information.",
+        "viewBtn": "View All Properties",
+        "realEstateCards": [
+            { 
+              "id": 1, 
+              "title": "Seaside Serenity Villa", 
+              "description": "Discover your own piece of paradise with the Seaside Serenity Villa. Featuring an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living. Enjoy relaxing sunsets on your private terrace and the sound of waves lapping against the shore.",
+              "price": 1250000,
+              "bedrooms": 4,
+              "bathrooms": 3,
+              "pic": "./realEstate/111.png"
+            },
+            { 
+              "id": 2, 
+              "title": "Metropolitan Haven", 
+              "description": "Experience urban living at its finest in this modern Metropolitan Haven. This stunning apartment boasts floor-to-ceiling windows, providing ample natural light and panoramic views of the city skyline. With a spacious layout, gourmet kitchen, and access to top-notch amenities, this home is perfect for those who appreciate the hustle and bustle of city life while enjoying the comforts of luxury.",
+              "price": 550000,
+              "bedrooms": 2,
+              "bathrooms": 2,
+              "pic": "./realEstate/222.png"
+            },
+            { 
+              "id": 3, 
+              "title": "Rustic Retreat Cottage", 
+              "description": "Escape to the tranquility of nature in the Rustic Retreat Cottage. Nestled in a serene forest, this charming cottage features rustic wooden beams, a cozy fireplace, and a spacious deck perfect for enjoying morning coffee surrounded by the sounds of nature. With hiking trails nearby and a picturesque lake just a short drive away, this cottage is ideal for those looking to unwind.",
+              "price": 520000,
+              "bedrooms": 3,
+              "bathrooms": 2,
+              "pic": "./realEstate/333.png"
+            },
+            {
+              "id": 4,
+              "title": "Modern Luxury Loft",
+              "description": "Step into the future with this Modern Luxury Loft. Featuring an open-concept design, sleek finishes, and smart home technology, this loft is perfect for tech-savvy buyers. The expansive living space is complemented by a private balcony offering stunning views of the city. Located in a vibrant neighborhood, you'll have easy access to trendy cafes, boutiques, and art galleries.",
+              "price":750000,
+              "bedrooms": 1,
+              "bathrooms": 1,
+              "pic": "./realEstate/111.png"
+            },
+            {
+              "id": 5,
+              "title": "Charming Family Home",
+              "description": "Welcome to your Charming Family Home, where comfort meets style. This spacious house features a beautiful garden, a modern kitchen, and a cozy living room with a fireplace. Located in a friendly neighborhood with excellent schools and parks, it's the perfect place for families looking to create lasting memories. Enjoy backyard barbecues and family gatherings in this inviting space.",
+              "price": 650000,
+              "bedrooms": 4,
+              "bathrooms": 3,
+              "pic": "./realEstate/222.png"
+            },
+            {
+              "id": 6,
+              "title": "Sleek Urban Apartment",
+              "description": "Live the city life in this Sleek Urban Apartment. This stylish one-bedroom unit features contemporary design, high-end appliances, and an open layout that maximizes space. Enjoy the convenience of being steps away from public transport, shopping, and dining options. Perfect for young professionals or couples looking for a vibrant lifestyle.",
+              "price": 400000,
+              "bedrooms": 1,
+              "bathrooms": 1,
+              "pic": "./realEstate/333.png"
+            }
+          ]
+    },
+   
+    "clientFeedback": {
+      "title": "What Our Clients Say",
+      "value": "Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.",
+      "viewBtn": "View All Testimonials",
+      "comments": [
+        { 
+          "title": "Exceptional Service!", 
+          "value": "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!", 
+          "clientName": "Wade Warren",
+          "clientLocation": "USA, California",
+          "profilePic": "./profilePics/111.png"
+        },
+        { 
+          "title": "Efficient and Reliable", 
+          "value": "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.", 
+          "clientName": "Emelie Thomson",
+          "clientLocation": "USA, Florida",
+          "profilePic": "./profilePics/222.png"
+        },
+        { 
+          "title": "Trusted Advisors", 
+          "value": "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!", 
+          "clientName": "John Mans",
+          "clientLocation": "USA, Nevada",
+          "profilePic": "./profilePics/333.png"
+        }
+      ]
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "value": "Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.",
+      "viewBtn": "View All FAQ’s",
+      "questions": [
+        { 
+          "question": "How do I search for properties on Estatein?", 
+          "answer": "Learn how to use our user-friendly search tools to find properties that match your criteria." 
+        },
+        { 
+          "question": "What documents do I need to sell my property through Estatein?", 
+          "answer": "Find out about the necessary documentation for listing your property with us." 
+        },
+        { 
+          "question": "How can I contact an Estatein agent?", 
+          "answer": "Discover the different ways you can get in touch with our experienced agents." 
+        },
+        { 
+          "question": "What is the process for buying a property through Estatein?", 
+          "answer": "Understand the step-by-step process for purchasing a property, from viewing to closing." 
+        },
+        { 
+          "question": "Are there any fees associated with using Estatein's services?", 
+          "answer": "Learn about the various fees involved in buying or selling properties through our platform." 
+        },
+        { 
+          "question": "Can I schedule a property viewing online?", 
+          "answer": "Yes, you can easily schedule a viewing for any property listed on our website." 
+        },
+        { 
+          "question": "What should I do if I have a complaint about a property or service?", 
+          "answer": "Reach out to our customer service team, and we will address your concerns promptly." 
+        },
+        { 
+          "question": "How can I stay updated on new property listings?", 
+          "answer": "Sign up for our newsletter to receive the latest listings and market updates directly to your inbox." 
+        }
+      ]
+    },
+    "beginYourJourney": {
+      "title": "Start Your Real Estate Journey Today",
+      "value": "Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance."
+    },
+    "footer": {
+      "column1": {
+        "title": "Home",
+        "links": [
+          "Hero Section",
+          "Features",
+          "Properties",
+          "Testimonials",
+          "FAQ’s"
+        ]
+      },
+      "column2": {
+        "title": "About Us",
+        "links": [
+          "Our Story",
+          "Our Works",
+          "How It Works",
+          "Our Team",
+          "Our Clients"
+        ]
+      },
+      "column3": {
+        "title": "Properties",
+        "links": [
+          "Portfolio",
+          "Categories"
+        ]
+      },
+      "column4": {
+        "title": "Services",
+        "links": [
+          "Valuation Mastery",
+          "Strategic Marketing",
+          "Negotiation Wizardry",
+          "Closing Success",
+          "Property Management"
+        ]
+      },
+      "column5": {
+        "title": "Contact Us",
+        "links": [
+          "Customer Service",
+          "Technical Support",
+          "Investor Relations",
+          "Privacy Policy",
+          "Terms of Use"
+        ]
+      }
+    }
+  }
+  

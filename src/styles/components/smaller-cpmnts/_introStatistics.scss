@@ -1,0 +1,54 @@
+@import '../../abstracts/variables';
+
+.intro-statistics{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    
+    
+
+   
+
+    .intro-statistic{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: $light-dark-bg;
+        border: 1px solid $border-gray;
+        border-radius: 12px;
+        flex: 1 1 220px; 
+        min-width: 220px; 
+        height: 121px; 
+        padding: 15px;
+        box-sizing: border-box;
+        
+      
+        h3{
+            margin: 0;
+            color: $main-text-white;
+            font-weight: $font-weight-bold;
+            @include responsive-font-size( 24px, 30px, 40px);
+        }
+        p{
+            color: $secondary-text-gray;
+            margin: 0;
+        }
+
+        @include respond-to('medium') {
+            height: 99px; 
+            flex: 1 1 180px; 
+            min-width: 180px;
+
+        }
+     
+    }
+    
+}
+

@@ -1,0 +1,104 @@
+@import './variables';
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'big' {
+      @media (max-width: 2240px) {
+        @content; 
+      }
+    } @else if $breakpoint == 'medium' {
+      @media (max-width: 1650px) {
+        @content;
+      }
+    }@else if $breakpoint == 'small' {
+      @media (max-width: 1367px) {
+        @content;
+      }
+    }@else if $breakpoint == 'very-small' {
+      @media (max-width: 890px) {
+        @content;
+      }
+    }
+  }
+
+    
+
+
+  @mixin responsive-font-size($size-small, $size-medium, $size-large) {
+    font-size: $size-large; 
+
+    @include respond-to('medium') {
+        font-size: $size-medium; 
+    }
+
+    @include respond-to('small') {
+        font-size: $size-small; 
+    }
+    @include respond-to('small') {
+        font-size: $size-small; 
+    }
+}
+
+
+@mixin responsive-padding($padding-normal, $padding-medium, $padding-large) {
+  padding: $padding-large;  
+
+  @include respond-to('medium') {
+      padding: $padding-medium; 
+  }
+
+  @include respond-to('small') {
+      padding: $padding-normal; 
+  }
+}
+
+@mixin responsive-padding-top($padding-normal, $padding-medium, $padding-large) {
+  padding-top: $padding-large; 
+
+  @include respond-to('medium') {
+    padding-top: $padding-medium;
+  }
+
+  @include respond-to('small') {
+    padding-top: $padding-normal; 
+  }
+}
+
+@mixin btn($border-color, $color) {
+    padding: 18px 24px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    background-color: $color;
+    font-family: $primary-font;
+    font-weight: $font-size-normal;
+    color: $main-text-white;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+
+    // Pridėkite metalinį efektą hover metu
+    &:hover {
+
+        box-shadow: 1px 1px 15px #202020;
+                 
+        transform: translateY(-1px); // Šiek tiek pakeliamas efektas
+    }
+  
+    &:active {
+      transform: scale(0.98);
+      
+    }
+  
+    // &:hover {
+    //   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    // }
+
+    @include respond-to('medium') {
+      padding: 14px 20px;
+    }
+    @include respond-to('small') {
+      padding: 14px 20px;
+    }
+    @include respond-to('very-small') {
+      width: 100%;
+    }
+  }
