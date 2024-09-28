@@ -1,14 +1,22 @@
 import React from 'react';
 import introSlogans from '../../types/introSlogans';
 
+import { slogan1, slogan2, slogan3, slogan4 } from '../../assets/images';
+
+type IconKeys = 'slogan1' | 'slogan2' | 'slogan3' | 'slogan4';
 
 const IntroSlogans: React.FC = () => {
+    const icons = {
+        slogan1,
+        slogan2,
+        slogan3,
+        slogan4,
+    };
     return (
         <div className="intro-slogans">
             {introSlogans.map((slogan, index) => (
                 <div key={index} className="intro-slogan">
-                    <img className="slogan-icon" src={slogan.icon} alt="slogan icon" />
-                    
+                   <img className="slogan-icon" src={icons[slogan.icon as IconKeys]} alt="slogan icon" />
 
                     <svg
                         className="link-icon"

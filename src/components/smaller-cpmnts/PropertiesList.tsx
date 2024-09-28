@@ -2,9 +2,20 @@ import React, { useState, useEffect, useRef  } from 'react';
 import realEstateCards from '../../types/realEstateCards';
 import { ReactComponent as PrevIcon } from '../../assets/prev.svg';
 import { ReactComponent as NextIcon } from '../../assets/next.svg';
+import { realEstate1, realEstate2,realEstate3, badroom, bathroom, propType } from '../../assets/images';
 
+// const badroom = require('../../assets/badroom.png');
+// const bathroom = require('../../assets/bathroom.png');
+// const propType = require('../../assets/propType.png');
+
+type IconKeys = 'realEstate1' | 'realEstate2' | 'realEstate3' ;
 
 const PropertiesList: React.FC = () => {
+    const icons = {
+        realEstate1,
+        realEstate2,
+        realEstate3
+    };
     const [currentPage, setCurrentPage] = useState(1);
     const [propertiesPerPage, setPropertiesPerPage] = useState(3);
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -50,12 +61,12 @@ const PropertiesList: React.FC = () => {
 
     return (
         <div className='cards-list-container'>
-            <div className="cards-list-contain">
+            {/* <div className="cards-list-contain">
                 {currentProperties.map((card, index) => {
                     const isExpanded = expandedIndex === index;
                     return (
                         <div key={index} className={`card ${isExpanded ? 'expanded' : ''}`}>
-                            <img className="prop-img" src={card.pic} alt="property pic" />
+                             <img className="prop-img" src={icons[card.pic as IconKeys]} alt="property pic" />
                             <div className="property-desc-container">
                                 <h3>{card.title}</h3>
                                 <p className={isExpanded ? 'expanded' : ''}>
@@ -69,15 +80,15 @@ const PropertiesList: React.FC = () => {
                             </div>
                             <div className="prop-details">
                                 <div className="detail">
-                                    <img src="assets/badroom.png" alt="bed icon" /> 
+                                    <img src={badroom} alt="bed icon" /> 
                                     <p>{`${card.bedrooms}-Bedroom${card.bedrooms > 1 ? 's' : ''}`}</p>
                                 </div>
                                 <div className="detail">
-                                    <img src="assets/bathroom.png" alt="bath icon" /> 
+                                    <img src={bathroom} alt="bath icon" /> 
                                     <p>{`${card.bathrooms}-Bathroom${card.bathrooms > 1 ? 's' : ''}`}</p>
                                 </div>
                                 <div className="detail">
-                                    <img src="assets/propType.png" alt="type icon" /> 
+                                    <img src={propType} alt="type icon" /> 
                                     <p>Villa</p>
                                 </div> 
                             </div>
@@ -108,7 +119,7 @@ const PropertiesList: React.FC = () => {
                     </button>
                 </div>
                 
-            </div>
+            </div> */}
         </div>
     );
 };

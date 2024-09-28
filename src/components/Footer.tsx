@@ -1,18 +1,20 @@
 import React from 'react';
 import footerColumns from '../types/footerColumns'; 
 import { ReactComponent as SendIcon } from '../assets/send.svg';
+const logo = require('../assets/Logo_.png');
+const emailIcon = require('../assets/email.png');
 
 const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className='logo-input-group'>
                 <ul className='logo'>
-                    <a href="#home"><img src="/assets/Logo_.png" alt="Logo" /></a>
+                    <a href="#home"><img src={logo} alt="Logo" /></a>
                 </ul>
                 <div className="email-input-container">
                     <input className="email-input" placeholder='Enter Your Email' />
                     <span className="input-icon">
-                        <img src="/assets/email.png" alt="Email Icon" />
+                        <img src={emailIcon} alt="Email Icon" />
                     </span>
                     <SendIcon className="submit-button"/>
                 </div>

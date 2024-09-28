@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import menuItems from '../types/menuItems'; 
+const logo = require('../assets/Logo_.png');
+
 
 const Header: React.FC = () => {
-
+    
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -31,7 +33,7 @@ const Header: React.FC = () => {
         <header>
             <nav>
                 <ul className='header-logo'>
-                    <a href="#home"><img src="/assets/Logo_.png" alt="Logo" /></a>
+                    <img src={logo} alt="Logo" />
                 </ul>
 
                 <div className='hamburger' onClick={toggleMenu}>

@@ -1,11 +1,13 @@
 import React from 'react';
 import DataJson from "../data/data.json";
+const abstractRight = require('../assets/abstract-right.png');
+const abstractRLeft = require('../assets/abstract-left.png');
 
 const BeginYourJourney: React.FC = () => {
     return (
         <section className='begin-your-journey'>
             <div className='left-pic'>
-                <img src='../../assets/abstract-left.png' alt='abstract left'  />
+                <img src={abstractRLeft} alt='abstract left'  />
             </div>
             
            
@@ -15,7 +17,7 @@ const BeginYourJourney: React.FC = () => {
             </div>
             <button className='explore-btn'>Explore Properties</button>
             <div className='right-pic'>
-                <img src='../../assets/abstract-right.png' alt='abstract right' />
+                <img src={abstractRight} alt='abstract right' />
             </div>
             
         </section>

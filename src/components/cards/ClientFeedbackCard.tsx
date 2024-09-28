@@ -1,16 +1,25 @@
 import React from 'react';
 import ReadMoreToggle from '../smaller-cpmnts/ReadMoreToggle';
+import { profilePic1, profilePic2, profilePic3 } from '../../assets/images';
+const starIcon = require('../../assets/star.png');
+
+type IconKeys = 'profilePic1' | 'profilePic2' | 'profilePic3' ;
 
 const ClientFeedbackCard = (card: any, index: number, expandedIndex: number | null, handleReadMore: (index: number) => void) => {
     const isExpanded = expandedIndex === index;
     const maxLength = 150;
+    const icons = {
+      profilePic1,
+      profilePic2,
+      profilePic3
+  };
 
   return (
     <div key={index} className={`feedback-card ${isExpanded ? 'expanded' : ''}`}>
          
       <div className="stars-container">
         {[...Array(card.stars)].map((_, i) => (
-          <img key={i} src='assets/star.png' alt="star icon" />
+          <img key={i} src={starIcon} alt="star icon" />
         ))}
       </div>
       <h3>{card.title}</h3>
@@ -22,7 +31,7 @@ const ClientFeedbackCard = (card: any, index: number, expandedIndex: number | nu
         
       />
       <div className='client-info-container'>
-        <img src={card.profilePic}/>
+        <img src={icons[card.profilePic as IconKeys]}/>
         <div className='client-info'>
             <h4 className='name'>{card.clientName}</h4>
             <h4 className='location'>{card.clientLocation}</h4>

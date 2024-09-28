@@ -1,13 +1,23 @@
 import React from 'react';
 import ReadMoreToggle from '../smaller-cpmnts/ReadMoreToggle';
 
+
+import { realEstate1, realEstate2,realEstate3, badroom, bathroom, propType } from '../../assets/images';
+
+type IconKeys = 'realEstate1' | 'realEstate2' | 'realEstate3' ;
+
 const RealEstateCard = (card: any, index: number, expandedIndex: number | null, handleReadMore: (index: number) => void) => {
   const isExpanded = expandedIndex === index;
   const maxLength = 60;
+  const icons = {
+    realEstate1,
+    realEstate2,
+    realEstate3
+};
 
   return (
     <div key={index} className={`card ${isExpanded ? 'expanded' : ''}`}>
-      <img className="prop-img" src={card.pic} alt="property pic" />
+      <img className="prop-img" src={icons[card.pic as IconKeys]} alt="property pic" />
       <div className="property-desc-container">
         <h3>{card.title}</h3>
         <ReadMoreToggle 
@@ -19,15 +29,15 @@ const RealEstateCard = (card: any, index: number, expandedIndex: number | null, 
       </div>
       <div className="prop-details">
         <div className="detail">
-          <img src="assets/badroom.png" alt="bed icon" />
+          <img src={badroom} alt="bed icon" />
           <p>{`${card.bedrooms}-Bedroom${card.bedrooms > 1 ? 's' : ''}`}</p>
         </div>
         <div className="detail">
-          <img src="assets/bathroom.png" alt="bath icon" />
+          <img src={bathroom} alt="bath icon" />
           <p>{`${card.bathrooms}-Bathroom${card.bathrooms > 1 ? 's' : ''}`}</p>
         </div>
         <div className="detail">
-          <img src="assets/propType.png" alt="type icon" />
+          <img src={propType} alt="type icon" />
           <p>Villa</p>
         </div>
       </div>

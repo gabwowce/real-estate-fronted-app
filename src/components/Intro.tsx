@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import DataJson from "../data/data.json";
 import IntroStatistics from '../components/smaller-cpmnts/IntroStatistics';
 import IntroSlogans from '../components/smaller-cpmnts/IntroSlogans';
+
+const discoverIcon = require('../assets/discover-frame.png');
+const linkIcon = require('../assets/link.png');
+const buildingPic = require('../assets/building.png');
+
 const Intro: React.FC = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -21,7 +26,7 @@ const Intro: React.FC = () => {
                     </div>
                     <img 
                         className={`discover ${isHovered ? 'rotate' : ''}`} 
-                        src="/assets/discover-frame.png" 
+                        src={discoverIcon}
                         alt='discover'
                     />
                     <a 
@@ -30,11 +35,11 @@ const Intro: React.FC = () => {
                         onMouseEnter={() => setIsHovered(true)} 
                         onMouseLeave={() => setIsHovered(false)}
                     >
-                        <img className='link-btn-pic' alt='link pic' src='/assets/link.png' />
+                        <img className='link-btn-pic' alt='link pic' src={linkIcon} />
                     </a>
                 </main>
                 <div className='pics-container'>
-                    <img className='building' src="/assets/building.png" alt='buiding pic'/>
+                    <img className='building' src={buildingPic} alt='buiding pic'/>
                     
                 </div>
             </div>
