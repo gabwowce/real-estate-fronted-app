@@ -7,14 +7,28 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/intro';
+@import 'components/paginatedList';
+@import 'components/beginYourJourney';
+@import 'components/socialFooter';
 
+@import '../styles/components/properties';
+
+@import './components/smaller-cpmnts/propertyCard';
 @import './components/smaller-cpmnts/introSlogans';
 @import './components/smaller-cpmnts/introStatistics';
+@import './components/smaller-cpmnts/sectionTitle';
+@import './components/smaller-cpmnts/feedbackCard';
+@import './components/smaller-cpmnts/FAQestionsCard';
 
 @import 'layouts/mainLayout';
 
 
 body{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin: 0;
 }

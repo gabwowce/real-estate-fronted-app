@@ -36,7 +36,7 @@
               "price": 1250000,
               "bedrooms": 4,
               "bathrooms": 3,
-              "pic": "./realEstate/111.png"
+              "pic": "/assets/realEstate/111.png"
             },
             { 
               "id": 2, 
@@ -45,7 +45,7 @@
               "price": 550000,
               "bedrooms": 2,
               "bathrooms": 2,
-              "pic": "./realEstate/222.png"
+              "pic": "/assets/realEstate/222.png"
             },
             { 
               "id": 3, 
@@ -54,7 +54,7 @@
               "price": 520000,
               "bedrooms": 3,
               "bathrooms": 2,
-              "pic": "./realEstate/333.png"
+              "pic": "/assets/realEstate/333.png"
             },
             {
               "id": 4,
@@ -63,7 +63,7 @@
               "price":750000,
               "bedrooms": 1,
               "bathrooms": 1,
-              "pic": "./realEstate/111.png"
+              "pic": "/assets/realEstate/333.png"
             },
             {
               "id": 5,
@@ -72,7 +72,7 @@
               "price": 650000,
               "bedrooms": 4,
               "bathrooms": 3,
-              "pic": "./realEstate/222.png"
+              "pic": "/assets/realEstate/111.png"
             },
             {
               "id": 6,
@@ -81,7 +81,7 @@
               "price": 400000,
               "bedrooms": 1,
               "bathrooms": 1,
-              "pic": "./realEstate/333.png"
+              "pic": "/assets/realEstate/222.png"
             }
           ]
     },
@@ -96,21 +96,48 @@
           "value": "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!", 
           "clientName": "Wade Warren",
           "clientLocation": "USA, California",
-          "profilePic": "./profilePics/111.png"
+          "profilePic": "/assets/profilePics/111.png",
+          "stars": 5
         },
         { 
           "title": "Efficient and Reliable", 
           "value": "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.", 
           "clientName": "Emelie Thomson",
           "clientLocation": "USA, Florida",
-          "profilePic": "./profilePics/222.png"
+          "profilePic": "/assets/profilePics/222.png",
+          "stars": 5
+        },
+        { 
+          "title": "Trusted Advisors", 
+          "value": "The Estatein team guided us through the entire buying process. Their knowledge to our needs were impressive. They were always available to answer our questions and provided valuable insights that made a significant difference in our decision-making. Thank you for your support! We couldn't have asked for a better experience.", 
+          "clientName": "John Mans",
+          "clientLocation": "USA, Nevada",
+          "profilePic": "/assets/profilePics/33.png",
+          "stars": 5
+        },
+        { 
+          "title": "Efficient and Reliable", 
+          "value": "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.", 
+          "clientName": "Emelie Thomson",
+          "clientLocation": "USA, Florida",
+          "profilePic": "/assets/profilePics/222.png",
+          "stars": 4
         },
         { 
           "title": "Trusted Advisors", 
           "value": "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!", 
           "clientName": "John Mans",
           "clientLocation": "USA, Nevada",
-          "profilePic": "./profilePics/333.png"
+          "profilePic": "/assets/profilePics/33.png",
+          "stars": 4
+        },
+        { 
+          "title": "Exceptional Service!", 
+          "value": "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!", 
+          "clientName": "Wade Warren",
+          "clientLocation": "USA, California",
+          "profilePic": "/assets/profilePics/111.png",
+          "stars": 3
         }
       ]
     },
@@ -182,7 +209,10 @@
         "title": "Properties",
         "links": [
           "Portfolio",
-          "Categories"
+          "Categories",
+          "All Properties",
+          "New Listings",
+          "Virtual Tours"
         ]
       },
       "column4": {

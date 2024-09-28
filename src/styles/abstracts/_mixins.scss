@@ -9,12 +9,16 @@
       @media (max-width: 1650px) {
         @content;
       }
+    }@else if $breakpoint == 'small1' {
+      @media (max-width: 1420px) {
+        @content;
+      }
     }@else if $breakpoint == 'small' {
       @media (max-width: 1367px) {
         @content;
       }
     }@else if $breakpoint == 'very-small' {
-      @media (max-width: 890px) {
+      @media (max-width: 940px) {
         @content;
       }
     }

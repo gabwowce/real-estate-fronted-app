@@ -1,17 +1,27 @@
 import React from 'react';
 import DataJson from "../data/data.json";
-import PropertiesList from './smaller-cpmnts/PropertiesList';
+import PaginatedList from './smaller-cpmnts/PaginatedList';
+import RealEstateCard from './cards/RealEstateCard '; 
+import SectionTitle from './smaller-cpmnts/SectionTitle';
+import realEstateCards from '../types/realEstateCards'; 
+
 
 const Properties: React.FC = () => {
     return (
         <section id="properties">
             <div className='properties-container'>
-                <div className='properties-title-container'>
-                    <h1>{DataJson.realEstate.title}</h1>
-                    <p>{DataJson.realEstate.value}</p>
-                </div>
+               
+                <SectionTitle
+                    title={DataJson.realEstate.title}
+                    value={DataJson.realEstate.value}
+                    btnValue={DataJson.realEstate.viewBtn}
+                />
+
                 <div className='properties-list'>
-                    <PropertiesList/>
+                <PaginatedList
+                    items={realEstateCards} 
+                    renderItem={RealEstateCard} 
+                    />
                 </div>
             </div>
         </section>

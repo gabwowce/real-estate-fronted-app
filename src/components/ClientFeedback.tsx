@@ -1,10 +1,30 @@
 import React from 'react';
+import DataJson from "../data/data.json";
+import SectionTitle from './smaller-cpmnts/SectionTitle';
+import PaginatedList from './smaller-cpmnts/PaginatedList';
+import clientCmments from '../types/clientCmments';
+import ClientFeedbackCard from './cards/ClientFeedbackCard';
 
 const ClientFeedback: React.FC = () => {
     return (
-        <div id="client-feedback">
-            <h1>ClientFeedback</h1>
-        </div>
+        <section id="client-feedback">
+            <div className='feedback-container'>
+            
+                <SectionTitle
+                    title={DataJson.clientFeedback.title}
+                    value={DataJson.clientFeedback.value}
+                    btnValue={DataJson.clientFeedback.viewBtn}
+                />
+
+                <div className='feedback-list'>
+                    <PaginatedList
+                        items={clientCmments} 
+                        renderItem={ClientFeedbackCard} 
+                    />
+                  
+                </div>
+            </div>
+        </section>
     );
 };
 

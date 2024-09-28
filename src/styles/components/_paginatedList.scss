@@ -1,0 +1,107 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.cards-list-container{
+    background-color: transparent;
+    // border: 1px solid $border-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    gap: 30px;
+    padding: 50px 0 0;
+  
+}
+
+.cards-list-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    // padding: 20px;
+
+}
+
+
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0 10px;
+    padding: 25px 0;
+    border-top: 1px solid $border-gray;
+
+    .total-pages{
+        color: $secondary-text-gray;
+        @include responsive-font-size(16px, 18px, 20px);
+        margin-left: 5px;
+    }
+
+    .current-page{
+        color: $main-text-white;
+        @include responsive-font-size(16px, 18px, 20px);
+        margin-left: 5px;
+    }
+
+    .pagination-btn-container {
+        display: flex;           
+        flex-direction: row;    
+        align-items: center; 
+        gap: 10px;     
+    }
+
+    .prev, .next {
+        color: white;  
+    }
+
+    button {
+        display: flex;              
+        justify-content: center;    
+        align-items: center;        
+        border: none; 
+        border-radius: 50%; 
+        width: 40px; 
+        height: 40px; 
+        cursor: pointer; 
+        background-color: $light-dark-bg;
+        border: 1px solid $border-gray;
+
+        &:disabled {
+            cursor: default;
+            background-color: $dark-bg;
+            color: #808080; 
+            
+            .prev, .next {          
+                color: #808080; 
+            }
+        }
+
+        
+    }
+
+    
+
+   
+}
+
+
+.read-more {
+    background: none;
+    border: none;
+    color: inherit;
+    text-decoration: underline;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    margin-left: 5px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

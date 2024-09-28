@@ -1,0 +1,130 @@
+.footer {
+    background-color: $dark-bg;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    @include respond-to('small') {
+        flex-direction: column;
+        gap: 50px;
+      }
+
+    .logo-input-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+
+        .logo{
+            padding: 0;
+
+            img{
+                width: 114px;
+                height: 34px;
+            }
+        }
+    }
+
+    .email-input-container {
+        display: flex; 
+        align-items: center; 
+        position: relative; 
+
+        .email-input {
+            padding: 10px 40px 10px 40px;
+            width: 280px;
+            border: 1px solid $border-gray; 
+            background-color: transparent;
+            border-radius: 8px; 
+            flex: 1; 
+            transition: border-color 0.3s;
+            position: relative; 
+
+       
+            &::placeholder {
+                color: $secondary-text-gray; 
+            }
+
+            &:focus {
+                border-color: $purple;
+                outline: none; 
+                color: $main-text-white;
+            }
+        }
+
+        .input-icon {
+            position: absolute; 
+            left: 10px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            pointer-events: none; 
+            
+
+            img {
+                width: 20px; 
+                height: 20px; 
+            }
+        }
+
+        .submit-button {
+            position: absolute; 
+            right: 12px; 
+            fill: $secondary-text-gray;
+            margin-left: 0px; 
+            background: none; 
+            border: none; 
+            cursor: pointer; 
+            color: $secondary-text-gray;
+            width: 20px; 
+            height: 20px; 
+
+
+        }
+
+    }
+
+    .footer-columns {
+        display: flex; 
+        justify-content: space-between; 
+        gap: 50px;
+
+        @include respond-to('small') {
+            flex-direction: row;
+            justify-content: flex-start; 
+            flex-wrap: wrap;
+          }
+    }
+
+    .footer-column {
+        width: auto;
+        font-weight: 200;
+
+        h3 {
+            margin-bottom: 25px; 
+            color: $secondary-text-gray;
+            font-weight: 100;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0; 
+
+            li {
+                margin-bottom: 15px; 
+
+                a {
+                    text-decoration: none; 
+                    color: $main-text-white; 
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $purple;
+                    }
+                }
+            }
+        }
+    }
+}
