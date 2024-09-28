@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.867e5463.css",
-    "main.js": "/my-app/static/js/main.7432ffdb.js",
-    "static/js/453.30f244fe.chunk.js": "/my-app/static/js/453.30f244fe.chunk.js",
-    "static/media/send.svg": "/my-app/static/media/send.a224becfe4dba8269acbbcb6946d5e12.svg",
-    "index.html": "/my-app/index.html",
-    "static/media/prev.svg": "/my-app/static/media/prev.21fd1360b1fc2558498416d330d8aea7.svg",
-    "static/media/next.svg": "/my-app/static/media/next.3b6ea2b8d5c9476c388e3e4b3ff54456.svg",
-    "main.867e5463.css.map": "/my-app/static/css/main.867e5463.css.map",
-    "main.7432ffdb.js.map": "/my-app/static/js/main.7432ffdb.js.map",
-    "453.30f244fe.chunk.js.map": "/my-app/static/js/453.30f244fe.chunk.js.map"
+    "main.css": "/real-estate-fronted-app/static/css/main.867e5463.css",
+    "main.js": "/real-estate-fronted-app/static/js/main.8de6cdeb.js",
+    "static/js/453.30f244fe.chunk.js": "/real-estate-fronted-app/static/js/453.30f244fe.chunk.js",
+    "static/media/send.svg": "/real-estate-fronted-app/static/media/send.a224becfe4dba8269acbbcb6946d5e12.svg",
+    "index.html": "/real-estate-fronted-app/index.html",
+    "static/media/prev.svg": "/real-estate-fronted-app/static/media/prev.21fd1360b1fc2558498416d330d8aea7.svg",
+    "static/media/next.svg": "/real-estate-fronted-app/static/media/next.3b6ea2b8d5c9476c388e3e4b3ff54456.svg",
+    "main.867e5463.css.map": "/real-estate-fronted-app/static/css/main.867e5463.css.map",
+    "main.8de6cdeb.js.map": "/real-estate-fronted-app/static/js/main.8de6cdeb.js.map",
+    "453.30f244fe.chunk.js.map": "/real-estate-fronted-app/static/js/453.30f244fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.867e5463.css",
-    "static/js/main.7432ffdb.js"
+    "static/js/main.8de6cdeb.js"
   ]
 }
