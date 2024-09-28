@@ -1,18 +1,25 @@
 {
   "files": {
     "main.css": "/real-estate-fronted-app/static/css/main.867e5463.css",
-    "main.js": "/real-estate-fronted-app/static/js/main.eac28e05.js",
+    "main.js": "/real-estate-fronted-app/static/js/main.7cf5cbd0.js",
     "static/js/453.30f244fe.chunk.js": "/real-estate-fronted-app/static/js/453.30f244fe.chunk.js",
+    "static/media/building.png": "/real-estate-fronted-app/static/media/building.b4306cd714b5dfdbb849.png",
+    "static/media/111.png": "/real-estate-fronted-app/static/media/111.45465bde942e68be28f9.png",
+    "static/media/333.png": "/real-estate-fronted-app/static/media/333.a3c3a56780d2cd3fa832.png",
+    "static/media/222.png": "/real-estate-fronted-app/static/media/222.d53870a271afd68a523a.png",
+    "static/media/abstract-left.png": "/real-estate-fronted-app/static/media/abstract-left.04e06c45b80b5d2be474.png",
+    "static/media/abstract-right.png": "/real-estate-fronted-app/static/media/abstract-right.5c63a63d3a09af9e9cbe.png",
+    "static/media/discover-frame.png": "/real-estate-fronted-app/static/media/discover-frame.0e84eecc6a3adcff0586.png",
     "static/media/send.svg": "/real-estate-fronted-app/static/media/send.a224becfe4dba8269acbbcb6946d5e12.svg",
     "index.html": "/real-estate-fronted-app/index.html",
     "static/media/prev.svg": "/real-estate-fronted-app/static/media/prev.21fd1360b1fc2558498416d330d8aea7.svg",
     "static/media/next.svg": "/real-estate-fronted-app/static/media/next.3b6ea2b8d5c9476c388e3e4b3ff54456.svg",
     "main.867e5463.css.map": "/real-estate-fronted-app/static/css/main.867e5463.css.map",
-    "main.eac28e05.js.map": "/real-estate-fronted-app/static/js/main.eac28e05.js.map",
+    "main.7cf5cbd0.js.map": "/real-estate-fronted-app/static/js/main.7cf5cbd0.js.map",
     "453.30f244fe.chunk.js.map": "/real-estate-fronted-app/static/js/453.30f244fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.867e5463.css",
-    "static/js/main.eac28e05.js"
+    "static/js/main.7cf5cbd0.js"
   ]
 }
