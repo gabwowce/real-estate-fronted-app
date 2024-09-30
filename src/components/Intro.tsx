@@ -14,7 +14,7 @@ const Intro: React.FC = () => {
         <div id='home'>
             <div className='main-home-container'>
                 <main className='welcome-container'>
-                <h1>{DataJson.intro.title.split(' ').slice(0, 3).join(' ')}<br />{DataJson.intro.title.split(' ').slice(3).join(' ')}</h1>
+                    <h1>{DataJson.intro.title.split(' ').slice(0, 3).join(' ')}<br />{DataJson.intro.title.split(' ').slice(3).join(' ')}</h1>
                     
                     <p>{DataJson.intro.value}</p>
                     <div className='btn-container'>
@@ -38,10 +38,7 @@ const Intro: React.FC = () => {
                         <img className='link-btn-pic' alt='link pic' src={linkIcon} />
                     </a>
                 </main>
-                <div className='pics-container'>
-                    <img className='building' src={buildingPic} alt='buiding pic'/>
-                    
-                </div>
+                <img className='building' src={buildingPic} alt='buiding pic'/>
             </div>
            
            
