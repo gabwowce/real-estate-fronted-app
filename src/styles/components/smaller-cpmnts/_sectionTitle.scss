@@ -20,7 +20,7 @@
     }
 
     h1{
-        @include responsive-font-size(28px, 38px, 48px);
+        font-size: $responsive-font-big;
         color:$main-text-white;
     }
     p{
