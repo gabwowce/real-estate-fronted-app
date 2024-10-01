@@ -1,13 +1,32 @@
+.statistics-container{
+    align-self: flex-start;
+    width: 100%;
+    @include respond-to('very-small') {
+               
+        align-self: center; 
+        
+    }
+}
+
 .intro-statistics {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap; // Prevents wrapping
+    flex-wrap: nowrap; 
     gap: 20px;
-    width: 100%;
     margin: 25px 0;
     overflow: visible; 
+    
+    @include respond-to('very-small') {
+               
+        align-self: center; 
+        width: calc(100% - 10%);
+        margin: 35px 5%;
+        
+    }
+}
+    
 
     .intro-statistic {
         display: flex;
@@ -20,6 +39,7 @@
         border-radius: 12px;
         flex: 1 1 220px;
         min-width: 120px;
+        max-width: 240px;
         height: 121px;
         padding: 15px;
         box-sizing: border-box;
@@ -31,6 +51,7 @@
 
         h3 {
             margin: 0;
+            padding: 0;
             color: $main-text-white;
             font-weight: $font-weight-bold;
             @include responsive-font-size(24px, 30px, 40px);
@@ -38,7 +59,7 @@
 
         p {
             color: $secondary-text-gray;
-            margin: 0;
+            
         }
 
         @include respond-to('medium') {
@@ -52,9 +73,15 @@
             flex: 0 1 180px;
             min-width: 150px;
         }
+
+        @include respond-to('very-small') {
+               
+            justify-content: flex-start;
+            align-items: flex-start;
+            
+        }
         
     }
-}
 
 @include respond-to('very-small') {
     .intro-statistics{

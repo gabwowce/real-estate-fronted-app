@@ -64,6 +64,16 @@
 
         @include respond-to('very-small') {
             flex: 1 1 45%;
+            height: 105px;
+            h3{
+                font-size: 2.5vw;
+            }
+            
+        }
+        @include respond-to('very-small2') {
+            height: 140px;
+
+            
         }
     }
     

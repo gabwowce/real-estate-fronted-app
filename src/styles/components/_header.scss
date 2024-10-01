@@ -51,8 +51,9 @@ header {
             .line {
                 width: 100%;
                 height: 3px;
-                background-color: white;
+                background-color: rgb(241, 241, 241);
                 transition: all 0.3s ease;
+                
             }
 
             .line.open:nth-child(1) {
@@ -101,7 +102,7 @@ header {
 
         // Small screens (mobile) styles
         @include respond-to('very-small') {
-            
+            font-size: 2.5vw;
             .menu-items {
                 display: none;
                 position: absolute;
@@ -111,7 +112,7 @@ header {
                 background-color: $light-dark-bg;
                 padding: 10px;
                 border-radius: 8px;
-                width: 100%;
+                width: 50%;
 
                 &.open {
                     display: flex;

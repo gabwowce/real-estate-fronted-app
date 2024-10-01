@@ -20,28 +20,38 @@
     padding-top: 75px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-grow: 1;
     flex-shrink: 1;  
     width: 100%;
     height: auto;
+    background: linear-gradient(
+        45deg, 
+        $dark-bg 45%, 
+        #1b1a1e 70%,
+        #2a213f 100%
+      );
     .welcome-container{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         flex: 1 1 50%;  
-        padding: 6% 0 0 10%;
+        padding: 6% 3% 0 10%;
         min-width: 350px;
-        max-width: none;
+        max-width: 1200px;
+        position: relative;
+        
 
         h1{
+            align-self: flex-start;
             color: $main-text-white;
             font-weight: $font-weight-semiBold;
-            @include responsive-font-size(38px, 54px, 60px);
+            @include responsive-font-size(34px, 50px, 60px);
         }
-        p{
+        .secondary-text{
+            align-self: flex-start;
             color: $secondary-text-gray;
             margin: 24px 0;
         }
@@ -53,6 +63,8 @@
             align-items: center;
             gap: 10px;
             margin: 25px 0;
+            align-self: flex-start;
+          
 
             .learn-more-btn{
                 @include btn($border-gray, $dark-bg)
@@ -64,9 +76,9 @@
 
         .discover{
             position: absolute;
-            width: 160px;
-            top: 100px;
-            right: 680px;
+            width: 180px;
+            top: 10px;
+            right: -100px;
             z-index: 10;
             transition: transform 2.5s ease;
             
@@ -89,16 +101,16 @@
 
         .link-btn{
             position: absolute;
-            width: 60px; 
-            height: 60px;
+            width: 70px; 
+            height: 70px;
             border: 1px solid $border-gray; 
             border-radius: 50%; 
             background-color: $light-dark-bg; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            top: 80px;
-            right: -30px;
+            top: 65px;
+            right: -45px;
             z-index: 11;
             cursor: pointer; 
             transition: background-color 0.3s; 
@@ -118,7 +130,7 @@
             }
 
             @include respond-to('medium') {
-                top: 75px;
+                top: 55px;
                 right: -25px;
                 width: 50px; 
                 height: 50px;
@@ -128,7 +140,7 @@
                 }
               }
               @include respond-to('small') {
-                top: 60px;
+                top: 40px;
                 right: -20px;
                 width: 40px; 
                 height: 40px;
@@ -148,10 +160,10 @@
 
     .building{
             flex: 1 1 50%; 
-            width: 100%;
+            // width: 100%;
             height: auto;
-            max-width: 750px;
-            min-width: 350px;
+            max-width: 950px;
+            min-width: 527px;
             overflow: hidden;
             position: relative;
           
@@ -176,6 +188,10 @@
 //     }
 // }
 
+
+
+
+
 @include respond-to('very-small') {
 
     #home{
@@ -192,7 +208,7 @@
         h1 {
             align-self: flex-start;
         }
-        p {
+        .secondary-text {
             align-self: flex-start;
         }
     
@@ -201,27 +217,32 @@
             justify-content: center;
             order: 2;
             flex: 1 1 calc(100% - 10%); // You might want to change this later
-            min-width: none; 
+            min-width: none;
+            max-width: 800px; 
             padding: 0; // Removing the !important 
-            margin: 5%; // This should apply a margin outside the container
+          
 
             h1 {
                 align-self: flex-start;
-                font-size: 5vw;
+                font-size: 6vw;
+                width:calc(100% - 10%);
+                margin: 0 5%;
             }
             
-            p {
+            .secondary-text {
                 align-self: flex-start;
-                font-size: 2.5vw;
+                font-size: 3vw;
+                width:calc(100% - 10%);
+                margin: 20px 5%;
             }
 
             .discover {
-                top: -100px;
+                top: -120px;
                 left: 0px;
             }
 
             .link-btn {
-                top: -70px;
+                top: -90px;
                 left: 30px;
             }
 
@@ -232,7 +253,7 @@
                 align-self: center;
                 justify-self: center;
                 width: calc(100% - 10%);
-                margin: 0 5%;
+                margin: 25px 5%;
             }
         }
 

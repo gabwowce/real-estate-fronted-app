@@ -16,7 +16,7 @@ const Intro: React.FC = () => {
                 <main className='welcome-container'>
                     <h1>{DataJson.intro.title.split(' ').slice(0, 3).join(' ')}<br />{DataJson.intro.title.split(' ').slice(3).join(' ')}</h1>
                     
-                    <p>{DataJson.intro.value}</p>
+                    <p className='secondary-text'>{DataJson.intro.value}</p>
                     <div className='btn-container'>
                         <button className='learn-more-btn'>Learn More</button>
                         <button className='browse-properties-btn'>Browse Properties</button>
