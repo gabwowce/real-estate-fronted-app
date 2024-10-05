@@ -1,4 +1,3 @@
-@import '../abstracts/variables';
 
 header {
     position: fixed;
@@ -6,7 +5,7 @@ header {
     top: 0;
     left: 0;
     background-color: $light-dark-bg;
-    height: 70px;
+    height: 80px;
 
     display: flex;
     align-items: center;
@@ -83,14 +82,33 @@ header {
             list-style: none;
             padding: 0;
             margin: 0;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
 
             li {
                 @include responsive-padding(10px 16px, 12px 20px, 14px 24px);
+                cursor: pointer;
+
+                
             }
+            
 
             a {
                 text-decoration: none;
                 color: white;
+            }
+
+            li:last-child {
+                outline: 1px solid $border-gray;
+                background-color: $dark-bg;
+                border-radius: 10px;
+                margin-left: 20px;
+                &:hover {
+                    box-shadow: 1px 1px 15px #202020;  
+                    transform: translateY(-1px); 
+                }
             }
         }
 
@@ -124,4 +142,10 @@ header {
             }
         }
     }
+}
+
+
+.menu-item-active {  
+    outline: 2px solid $border-gray;
+    border-radius: 10px;
 }

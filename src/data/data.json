@@ -2,10 +2,11 @@
     "header": {
       "menu": {
         "items": [
-            { "label": "Home", "link": "#home" },
-            { "label": "Properties", "link": "#properties" },
-            { "label": "Client Feedback", "link": "#client-feedback" },
-            { "label": "FAQ", "link": "#faq" }
+          { "label": "Home", "link": "home" },
+          { "label": "About Us", "link": "about-us" },
+          { "label": "Properties", "link": "properties" },
+          { "label": "Services", "link": "services" },
+          { "label": "Contact Us", "link": "contact-us" }
         ]
       }
     },

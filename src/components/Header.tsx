@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import menuItems from '../types/menuItems'; 
+import { Link } from 'react-router-dom';
 const logo = require('../assets/Logo_.png');
 
 
 const Header: React.FC = () => {
     
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeItem, setActiveItem] = useState('');
+
+    console.log(`activeItem: ${activeItem}`);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -29,6 +33,8 @@ const Header: React.FC = () => {
         };
     }, []);
 
+
+    
     return (
         <header>
             <nav>
@@ -44,10 +50,13 @@ const Header: React.FC = () => {
 
                 <ul className={menuOpen ? 'menu-items open' : 'menu-items'}>
                     {menuItems.map((item) => (
-                        <li key={item.label} className="menu-item">
-                            <a href={item.link}>
+                        <li key={item.label} className={`menu-item ${activeItem === `${item.link}` ? 'menu-item-active' : ''}`}>
+                            <Link 
+                                to={item.link} // Use Link instead of a
+                                onClick={() => setActiveItem(item.link)} // Set active item
+                            >
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

@@ -17,9 +17,12 @@ const profilePic1 = require('../assets/profilePics/111.png');
 const profilePic2 = require('../assets/profilePics/222.png');
 const profilePic3 = require('../assets/profilePics/33.png');
 
-
+const slogan11 = require('../assets/slogans/about-us/slogan11.png');
+const slogan22 = require('../assets/slogans/about-us/slogan22.png');
+const slogan33 = require('../assets/slogans/about-us/slogan33.png');
+const slogan44 = require('../assets/slogans/about-us/slogan44.png');
 
 export { slogan1, slogan2, slogan3, slogan4, realEstate1, realEstate2,  realEstate3,
-    badroom, bathroom, propType, profilePic1, profilePic2, profilePic3
+    badroom, bathroom, propType, profilePic1, profilePic2, profilePic3,slogan11, slogan22, slogan33, slogan44,
 
 };

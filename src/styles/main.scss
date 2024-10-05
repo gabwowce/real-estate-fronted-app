@@ -6,19 +6,21 @@
 
 @import 'components/header';
 @import 'components/footer';
-@import 'components/intro';
+@import 'components/smaller-home/introHome';
 @import 'components/paginatedList';
 @import 'components/beginYourJourney';
 @import 'components/socialFooter';
 
-@import '../styles/components/properties';
 
-@import './components/smaller-cpmnts/propertyCard';
-@import './components/smaller-cpmnts/introSlogans';
-@import './components/smaller-cpmnts/introStatistics';
-@import './components/smaller-cpmnts/sectionTitle';
-@import './components/smaller-cpmnts/feedbackCard';
-@import './components/smaller-cpmnts/FAQestionsCard';
+@import './components/smaller-home/propertyCard';
+@import './components/smaller-home/introSlogans';
+@import './components/introStatistics';
+@import './components/sectionTitle';
+@import './components/smaller-home/feedbackCard';
+@import './components/smaller-home/FAQestionsCard';
+
+@import './components/smaller-about-us/intro-about-us.scss';
+@import './components/smaller-about-us/valueCard.scss';
 
 @import 'layouts/mainLayout';
 
