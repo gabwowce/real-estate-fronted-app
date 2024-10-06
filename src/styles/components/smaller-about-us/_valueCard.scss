@@ -9,6 +9,11 @@
     height: 200px;
     gap: 20px;
 
+    @include respond-to('very-small') {
+        gap: 10px;
+    }
+  
+
     .value-card-title{
         color: white;
         @include responsive-font-size(18px,24px,30px);
@@ -26,12 +31,32 @@
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
+        @include respond-to('very-small') {
+            gap: 10px;
+        }
     }
 
     .value-card-img{
         width: 74px;
         height: 74px;
+        @include respond-to('small') {
+            width: 64px;
+            height: 64px;
+        }
+        @include respond-to('very-small') {
+            width: 44px;
+            height: 44px;
+        }
+        
     }
 
+
+}
+
+
+
+
+
+.value-cards-container{
 
 }

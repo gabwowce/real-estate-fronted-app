@@ -44,19 +44,21 @@
 
         .house-pic {
             order: 1;
-            width: 90%; 
+            width: 80%; 
             height: auto;
             max-width: 720px;
+            min-width: none;
             border: 1px solid $border-gray;
             border-radius: 12px;
-            margin: 5% 0; 
+            margin: 5% 10%; 
         }
 
         .title-section {
             order: 2;
-            width: 90%; 
-            padding: 0;
-            margin: 5% 0; 
+            min-width: none;
+            max-width: none; 
+            padding: 5% 10%;
+            
         }
     }
 }
