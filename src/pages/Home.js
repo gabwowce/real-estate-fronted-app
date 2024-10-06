@@ -9,11 +9,12 @@ function Home() {
 
   return (
     <>
-        <Intro/>
-        <PropertiesCards/>
+     <Intro/>
+        {/* <PropertiesCards/>
         <ClientFeedback/>
-        <FAQ/>
+        <FAQ/> */}
     </>
+   
    
   );
 }

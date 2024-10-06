@@ -12,7 +12,7 @@ const Intro: React.FC = () => {
 
     return (
         <div id='home'>
-            <div className='main-home-container'>
+            <div className='main-home-container container'>
                 <main className='welcome-container'>
                     <h1>{DataJson.intro.title.split(' ').slice(0, 3).join(' ')}<br />{DataJson.intro.title.split(' ').slice(3).join(' ')}</h1>
                     

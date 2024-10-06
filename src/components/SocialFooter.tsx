@@ -7,7 +7,7 @@ const ytIcon = require('../assets/yt.png');
 
 const SocialFooter: React.FC = () => {
     return (
-        <div className='social-footer-container'>
+        <div className='social-footer-container container'>
             <p className='rights'>
                 @2023 Estatein. All Rights Reserved.
             </p>

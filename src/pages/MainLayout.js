@@ -7,14 +7,12 @@ import ContentRoutes from '../routes/ContentRoutes';
 
 function MainLayout() {
   return (
-    <div className="container">
-      <div className='content'>
-        <Header/>
+    <div className="main-container">
+      <Header/>
         <ContentRoutes/>
         <BeginYourJourney/>
         <Footer/>
         <SocialFooter/>
-      </div>
     </div>
   );
 }

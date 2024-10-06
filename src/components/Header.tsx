@@ -36,8 +36,7 @@ const Header: React.FC = () => {
 
     
     return (
-        <header>
-            <nav>
+        <nav className='container'>
                 <ul className='header-logo'>
                     <img src={logo} alt="Logo" />
                 </ul>
@@ -61,7 +60,6 @@ const Header: React.FC = () => {
                     ))}
                 </ul>
             </nav>
-        </header>
     );
 };
 

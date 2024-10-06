@@ -4,10 +4,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 10%;
     gap: 30px;
     width: 100%;
     height: auto;
+    padding: 20px;
+    flex-grow: 1;
     p{
         color: $main-text-white;
     }

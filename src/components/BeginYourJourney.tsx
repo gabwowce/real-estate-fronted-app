@@ -5,22 +5,22 @@ const abstractRLeft = require('../assets/abstract-left.png');
 
 const BeginYourJourney: React.FC = () => {
     return (
-        <section className='begin-your-journey'>
+        <div>
             <div className='left-pic'>
-                <img src={abstractRLeft} alt='abstract left'  />
-            </div>
-            
-           
-            <div className='text'>
-                <h1>{DataJson.beginYourJourney.title}</h1>
-                <p>{DataJson.beginYourJourney.value}</p>
-            </div>
-            <button className='explore-btn'>Explore Properties</button>
+                    <img src={abstractRLeft} alt='abstract left'  />
+                </div>
+            <section className='begin-your-journey container'>
+                <div className='text'>
+                    <h1>{DataJson.beginYourJourney.title}</h1>
+                    <p>{DataJson.beginYourJourney.value}</p>
+                </div>
+                <button className='explore-btn'>Explore Properties</button>       
+            </section>
             <div className='right-pic'>
-                <img src={abstractRight} alt='abstract right' />
-            </div>
-            
-        </section>
+                    <img src={abstractRight} alt='abstract right' />
+                </div>
+        </div>
+       
 
     );
 };

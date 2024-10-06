@@ -1,32 +1,33 @@
 @import './variables';
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint == 'big' {
-      @media (max-width: 2240px) {
-        @content; 
+  @if $breakpoint == '2xl' {
+      @media (max-width: 1480px) {
+          @content;
       }
-    } @else if $breakpoint == 'medium' {
-      @media (max-width: 1650px) {
-        @content;
+  } @else if $breakpoint == 'xl' {
+      @media (max-width: 1280px) {
+          @content;
       }
-    }@else if $breakpoint == 'small1' {
-      @media (max-width: 1420px) {
-        @content;
+  } @else if $breakpoint == 'lg' {
+      @media (max-width: 1024px) {
+          @content;
       }
-    }@else if $breakpoint == 'small' {
-      @media (max-width: 1367px) {
-        @content;
+  } @else if $breakpoint == 'md' {
+      @media (max-width: 768px) {
+          @content;
       }
-    }@else if $breakpoint == 'very-small' {
-      @media (max-width: 1020px) {
-        @content;
+  } @else if $breakpoint == 'sm' {
+      @media (max-width: 640px) { // Pakeisk į 640px
+          @content;
       }
-    }@else if $breakpoint == 'very-small2' {
-      @media (max-width: 330px) {
-        @content;
+  } @else if $breakpoint == 'xs' {
+      @media (max-width: 475px) {
+          @content;
       }
-    }
   }
+}
+
 
     
 

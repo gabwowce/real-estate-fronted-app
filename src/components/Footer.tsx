@@ -6,7 +6,7 @@ const emailIcon = require('../assets/email.png');
 
 const Footer: React.FC = () => {
     return (
-        <footer className="footer">
+        <footer className="footer container">
             <div className='logo-input-group'>
                 <ul className='logo'>
                     <a href="#home"><img src={logo} alt="Logo" /></a>
