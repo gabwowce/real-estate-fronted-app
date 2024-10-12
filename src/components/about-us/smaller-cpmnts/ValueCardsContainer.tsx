@@ -13,18 +13,21 @@ const ValueCardsContainer: React.FC =() =>{
         slogan44,
     };
     return(
-        <div className='value-cards-container'>
-        {
-            valueCard.map((card) => (
-                <ValueCard
-                   
-                    pic={icons[card.icon as IconKeys]}
-                    title={card.title}
-                    value={card.value}
-                />
-            ))
-        }
-    </div>
+        <div className='values-card-bg'>
+            <div className='value-cards-container'>
+                    {
+                        valueCard.map((card) => (
+                            <ValueCard
+                            
+                                pic={icons[card.icon as IconKeys]}
+                                title={card.title}
+                                value={card.value}
+                            />
+                        ))
+                    }
+                </div>
+        </div>
+        
     );
 }
 

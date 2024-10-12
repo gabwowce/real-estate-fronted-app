@@ -1,0 +1,48 @@
+
+
+.values-about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start;
+    height: auto;
+    margin-top: 120px;
+    width: 100%;
+
+    .title-section{
+        flex: 1 1 auto; 
+        max-width: 40%; 
+        margin-left: 10%;
+        padding-right: 50px;
+        display: flex;
+        align-self: center;
+    }
+
+    .value-cards{
+        flex: 1 1 auto; 
+        max-width: 60%; 
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@include respond-to('very-small') {
+    .values-about-us{
+        flex-direction: column;
+
+        .title-section{
+            align-self: flex-start;
+            margin: 0 10%;
+            max-width: 100%;
+        }
+
+        .value-cards{
+            align-self: center;
+            justify-content: center;
+            margin: 50px 10%;
+            max-width: 100%;
+        }
+    }
+}

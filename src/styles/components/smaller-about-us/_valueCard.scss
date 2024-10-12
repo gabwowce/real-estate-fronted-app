@@ -4,13 +4,17 @@
     justify-content: center;
     align-items: flex-start;
     background-color: transparent;
-   
-    width: 360px;
-    height: 200px;
+    max-width: 100%;
+    min-width: none;
+    height: auto;
     gap: 20px;
 
     @include respond-to('very-small') {
         gap: 10px;
+        flex: 1 1 auto; /* Galima naudoti flex */
+        max-width: 100%; /* Užtikrina, kad kortelės neužimtų daugiau nei 100% */
+        height: auto;
+    
     }
   
 
@@ -54,9 +58,49 @@
 }
 
 
-
+.values-card-bg{
+    background-color: $light-dark-bg;
+    padding: 5px;
+    border-radius: 12px;
+}
 
 
 .value-cards-container{
+    background-color: $dark-bg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    border: 1px solid $border-gray;
+    padding: 50px;
+    border-radius: 12px;
+    position: relative;
+    width: 100%;
 
+ 
+
+    
 }
+
+.value-cards-container::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Nustato juostelę per vidurį vertikaliai */
+    left: 10%;
+    right: 10%;
+    height: 1px; /* Juostelės aukštis */
+    background-color: $border-gray; /* Juostelės spalva */
+    transform: translateY(-50%); /* Centruoja juostelę tiksliai per vidurį */
+}
+
+.value-cards-container::after {
+    content: "";
+    position: absolute;
+    bottom:10%;
+    top: 10%;
+    left: 50%;
+    width: 1px;
+    background-color: $border-gray;
+}
+
+
+
