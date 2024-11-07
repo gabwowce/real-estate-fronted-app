@@ -12,7 +12,7 @@ A real estate application built with React and TypeScript, featuring a responsiv
 ## Live Demo
 
 You can check out the live version of the app at:  
-[Real Estate App Demo]([https://your-app-link.com](https://gabwowce.github.io/real-estate-fronted-app/))
+[Real Estate App Demo](https://gabwowce.github.io/real-estate-fronted-app/)
 
 ## Installation
 
